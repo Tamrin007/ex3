@@ -87,7 +87,7 @@ function sendData(name, num) {
         type: 'POST',
         url: url,
         data: data,
-        dataType: 'text/json',
+        dataType: 'text',
         success: function(res) {
             console.log(res);
         },
