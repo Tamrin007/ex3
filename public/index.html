@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/siimple/2.0.0/siimple.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700">
+    <link rel="stylesheet" href="/stylesheets/style.css">
+    <title>実験</title>
+</head>
+
+<body>
+    <div class="header">
+        <div class="siimple-h1 heading">実験</div>
+    </div>
+    <div class="main">
+        <div class="siimple-grid">
+            <div class="siimple-grid-row">
+                <div class="siimple-grid-col siimple-grid-col--12">
+                    <div class="siimple-h2">
+                        手順
+                    </div>
+                    <p class="siimple-p">
+                        以下の手順を指示されたアルファベット順に行って下さい。
+                        <div class="order">
+                            <ol>
+                                <li>氏名を入力してください。</li>
+                                <li>指定されたアルファベットの動画ボタンを押します。</li>
+                                <li>アプリが起動したら画面の前に顔を置き、再生ボタンを押して下さい。しばらくすると動画が始まります。</li>
+                                <li>動画を視聴し終えたら対応するアルファベットのアンケートボタンを押し、アンケートに答えてください。</li>
+                                <li>全てのアルファベットを終えるまで 2~4 を繰り返してください。</li>
+                            </ol>
+                        </div>
+                    </p>
+                    <div class="siimple-h2">
+                        氏名
+                    </div>
+                    <input type="text" id="name-form" class="siimple-input" placeholder="例：大久保 亜美">
+                    <div class="siimple-h2">
+                        動画
+                    </div>
+                    <section id="video-area"></section>
+                    <div class="siimple-h2">
+                        アンケート
+                    </div>
+                    <section id="questionary-area"></section>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="/scripts/script.js" charset="utf-8"></script>
+</body>
+
+</html>
