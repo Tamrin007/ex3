@@ -74,7 +74,7 @@ function onStop() {
     console.log(name, num);
 
     sendData(name, num);
-    saveData();
+    saveData(name, num);
 };
 
 function sendData(name, num) {
@@ -95,4 +95,12 @@ function sendData(name, num) {
             console.log(res);
         },
     });
+};
+
+function saveData(name, num) {
+    const data = JSON.stringify({
+        emotions,
+        expressions,
+    });
+    localStorage.setItem(name + '_' + num, data);
 };
