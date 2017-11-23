@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>{{ .num }}</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.4.2/css/bulma.css">
+        <link rel="stylesheet" href="/stylesheets/video.css">
+    </head>
+    <body>
+        <div class="section back">
+            <h1 class="title white-font">実験システム</h1>
+            <h2 class="subtitle white-font">{{ .num }}</h2>
+            <div class="columns">
+                <div class="column is-10 is-offset-1 is-8-desktop is-offset-2-desktop">
+                    <video id="video" src="/videos/{{ .num }}.mp4" width="100%"></video>
+                </div>
+            </div>
+            <div class="centering-inline">
+                <button class="button is-danger is-outlined" id="start" onclick="onStart()">
+                    <span class="icon">
+                        <i class="fa fa-play"></i>
+                    </span>
+                </button>
+            </div>
+        </div>
+        <div class="culumns">
+            <div class="column" id="affdex_elements" style="width:680px;height:480px;"></div>
+        </div>
+        <script type="text/javascript" src="https://download.affectiva.com/js/3.2/affdex.js"></script>
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="/scripts/video.js"></script>
+    </body>
+</html>
