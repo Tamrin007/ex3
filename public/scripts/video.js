@@ -71,7 +71,6 @@ function onStop() {
     }
     const name = decodeURI(location.pathname).split('\/')[1];
     const num = decodeURI(location.pathname).split('\/')[2];
-    console.log(name, num);
 
     sendData(name, num);
     saveData(name, num);
@@ -83,8 +82,6 @@ function sendData(name, num) {
         emotions,
         expressions,
     });
-
-    console.log(data);
 
     $.ajax({
         type: 'POST',
