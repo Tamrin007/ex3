@@ -1,8 +1,8 @@
 let isFirstTime = true;
 let emotions = [];
 let expressions = [];
-const video = $('#video');
-const startBtn = $('#start');
+const video = $('#video')[0];
+const startBtn = $('#start')[0];
 
 // SDK Needs to create video and canvas nodes in the DOM in order to function
 // Here we are adding those nodes a predefined div.
