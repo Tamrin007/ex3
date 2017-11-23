@@ -81,7 +81,7 @@ function sendData(name, num) {
     const data = JSON.stringify({
         emotions,
         expressions,
-    });
+    }, null, 4);
 
     $.ajax({
         type: 'POST',
@@ -98,6 +98,6 @@ function saveData(name, num) {
     const data = JSON.stringify({
         emotions,
         expressions,
-    });
+    }, null, 4);
     localStorage.setItem(name + '_' + num, data);
 };
